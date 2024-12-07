@@ -26,7 +26,12 @@
     "start": "pnpm exec ./dist/dev.cmd",
     "prestart": "pnpm build",
     "watch": "pnpm dev",
-    "preinstall": "npx only-allow pnpm"
+    "preinstall": "npx only-allow pnpm",
+    "change": "pnpm changeset add",
+    "change:version": "pnpm changeset version",
+    "push:tags": "pnpm changeset tag && git push --follow-tags",
+    "release": "pnpm changeset publish",
+    "prerelease": "pnpm run build"
   },
   "publishConfig": {
     "access": "public"
