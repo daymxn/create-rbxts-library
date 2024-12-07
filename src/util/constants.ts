@@ -29,7 +29,7 @@ export const FeatureFiles = {
   api: ["wiki/docs/api", "api-extractor.json", "api", ".github/workflows/api-check.yaml"],
   wiki: ["wiki", ".github/workflows/deploy.yaml"],
   tests: ["test.project.json", "testez-companion.toml", ".github/workflows/unit-tests.yaml"],
-  lua: ["stylua.toml", ".luarc"],
+  lua: ["stylua.toml", ".luaurc"],
 };
 
 export const TemplateFiles = {
