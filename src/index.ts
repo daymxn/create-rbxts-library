@@ -1,4 +1,4 @@
-#!/usr/bin/env -S node --inspect=9229 --loader ts-node/esm --disable-warning=ExperimentalWarning
+#!/usr/bin/env -S node --loader ts-node/esm --disable-warning=ExperimentalWarning
 /**
  * @license
  * Copyright 2024 Daymon Littrell-Reyes
