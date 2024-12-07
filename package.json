@@ -1,6 +1,6 @@
 {
   "name": "@daymxn/create-rbxts-library",
-  "version": "0.10.14",
+  "version": "0.10.15",
   "description": "Create template for scaffolding a new rbxts library.",
   "bin": "./bin/index.cjs",
   "engines": {
