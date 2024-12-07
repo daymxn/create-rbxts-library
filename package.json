@@ -1,15 +1,13 @@
 {
   "name": "@daymxn/create-rbxts-library",
-  "version": "0.10.0",
+  "version": "0.10.13",
   "description": "Create template for scaffolding a new rbxts library.",
-  "bin": {
-    "bs": "dist/index.js"
-  },
+  "bin": "./bin/index.cjs",
   "engines": {
     "node": ">=22.9.0"
   },
   "type": "module",
-  "main": "dist/index.js",
+  "main": "dist/index.cjs",
   "author": "Daymon Littrell-Reyes",
   "homepage": "https://github.com/daymxn/create-rbxts-library",
   "repository": {
@@ -23,7 +21,7 @@
     "build": "node esbuild.config.js",
     "postbuild": "cp assets/dev.cmd dist/dev.cmd",
     "dev": "pnpm --package=typescript dlx tsc --project tsconfig.json --watch",
-    "start": "pnpm exec ./dist/dev.cmd",
+    "start": "pnpm node ./bin/index.cjs",
     "prestart": "pnpm build",
     "watch": "pnpm dev",
     "preinstall": "npx only-allow pnpm",
@@ -31,7 +29,8 @@
     "change:version": "pnpm changeset version",
     "push:tags": "pnpm changeset tag && git push --follow-tags",
     "release": "pnpm changeset publish",
-    "prerelease": "pnpm run build"
+    "prerelease": "pnpm run build",
+    "prepublish": "pnpm build"
   },
   "publishConfig": {
     "access": "public"

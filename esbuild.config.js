@@ -19,7 +19,7 @@ import tscPlugin from "esbuild-plugin-tsc";
 
 build({
   entryPoints: ["src/index.ts"],
-  outdir: "dist",
+  outdir: "./bin",
   outExtension: {
     ".js": ".cjs",
   },

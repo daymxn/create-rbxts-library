@@ -1,4 +1,4 @@
-#!/usr/bin/node
+#!/usr/bin/env node
 /**
  * @license
  * Copyright 2024 Daymon Littrell-Reyes

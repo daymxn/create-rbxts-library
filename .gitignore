@@ -4,6 +4,7 @@
 /docs
 /dist
 /temp
+/bin
 /scripts/dist
 service-account.json
 .pnpm-store/**
