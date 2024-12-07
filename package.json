@@ -1,6 +1,6 @@
 {
   "name": "@daymxn/create-rbxts-library",
-  "version": "0.9.0",
+  "version": "0.10.0",
   "description": "Create template for scaffolding a new rbxts library.",
   "bin": {
     "bs": "dist/index.js"
