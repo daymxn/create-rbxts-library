@@ -159,7 +159,7 @@ async function main() {
   await retry(() => fs.remove(".git"));
 
   // eslint-disable-next-line unicorn/no-null
-  await git.init({ "--initial-branch": "main", "--shared": "all", "--quiet": null });
+  await git.init({ "--initial-branch": "main", "--quiet": null });
   await git.addRemote("origin", repoUrl);
 
   const deletions: Promise<void>[] = [];
