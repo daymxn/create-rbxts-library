@@ -1,5 +1,11 @@
 # @daymxn/create-rbxts-library
 
+## 0.10.15
+
+### Patch Changes
+
+- c9ffeb0: Fix typo in luarc.
+
 ## 0.10.14
 
 ### Patch Changes
