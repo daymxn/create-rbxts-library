@@ -20,7 +20,7 @@
     "url": "https://github.com/daymxn/create-rbxts-library/issues"
   },
   "scripts": {
-    "build": "pnpm tsc",
+    "build": "node esbuild.config.js",
     "postbuild": "cp assets/dev.cmd dist/dev.cmd",
     "dev": "pnpm --package=typescript dlx tsc --project tsconfig.json --watch",
     "start": "pnpm exec ./dist/dev.cmd",
@@ -49,6 +49,8 @@
     "@types/validate-npm-package-name": "^4.0.2",
     "@typescript-eslint/eslint-plugin": "^8.17.0",
     "@typescript-eslint/parser": "^8.17.0",
+    "esbuild": "^0.24.0",
+    "esbuild-plugin-tsc": "^0.4.0",
     "eslint": "^9.16.0",
     "eslint-plugin-notice": "^1.0.0",
     "eslint-plugin-unicorn": "^56.0.1",

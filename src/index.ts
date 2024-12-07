@@ -1,4 +1,4 @@
-#!/usr/bin/env -S node --loader ts-node/esm --disable-warning=ExperimentalWarning
+#!/usr/bin/node
 /**
  * @license
  * Copyright 2024 Daymon Littrell-Reyes
@@ -258,7 +258,8 @@ async function main() {
 `);
 }
 
-await main().catch((e) => {
+// eslint-disable-next-line unicorn/prefer-top-level-await
+main().catch((e) => {
   if (e.name === "ExitPromptError") {
     return;
   }
