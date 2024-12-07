@@ -1,0 +1,45 @@
+{
+  // Schemas
+  "json.schemas": [
+    {
+      "fileMatch": [ "package.json", "package.json5", "tsup.config.json" ],
+      "url": "https://cdn.jsdelivr.net/npm/tsup/schema.json"
+    },
+    {
+      "fileMatch": [ "/bs.config.json" ],
+      "url": ".vscode/bs-config-schema.json"
+    }
+  ],
+  "yaml.schemas": {
+    "https://json.schemastore.org/github-workflow.json": ".github/workflows/**.yaml"
+  },
+  // Formatters
+  "[typescript]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode",
+    "editor.formatOnSave": true
+  },
+  "[typescriptreact]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode",
+    "editor.formatOnSave": true
+  },
+  "[luau]": {
+    "editor.defaultFormatter": "JohnnyMorganz.stylua"
+  },
+  // Eslint
+  "eslint.run": "onType",
+  "eslint.useFlatConfig": true,
+  "eslint.format.enable": true,
+  "editor.codeActionsOnSave": {
+    "source.fixAll.eslint": "explicit"
+  },
+  "eslint.options": {
+    "flags": [ "unstable_ts_config" ]
+  },
+  "eslint.validate": [ "typescript", "typescriptreact" ],
+  // Misc
+  "typescript.tsdk": "node_modules/typescript/lib",
+  "files.eol": "\n",
+  "json.format.keepLines": true,
+  "files.trimTrailingWhitespace": false,
+  "testez-companion.timeout": 10
+}

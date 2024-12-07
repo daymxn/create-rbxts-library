@@ -1,0 +1,9 @@
+/node_modules
+/dist
+*.tsbuildinfo
+/docs
+/dist
+/temp
+/scripts/dist
+service-account.json
+.pnpm-store/**

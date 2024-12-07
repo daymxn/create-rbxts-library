@@ -1,0 +1,65 @@
+{
+  "name": "@daymxn/create-rbxts-library",
+  "version": "0.8.0",
+  "description": "Create template for scaffolding a new rbxts library.",
+  "bin": {
+    "bs": "dist/index.js"
+  },
+  "engines": {
+    "node": ">=22.9.0"
+  },
+  "type": "module",
+  "main": "dist/index.js",
+  "author": "Daymon Littrell-Reyes",
+  "homepage": "https://github.com/daymxn/create-rbxts-library",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/daymxn/create-rbxts-library.git"
+  },
+  "bugs": {
+    "url": "https://github.com/daymxn/create-rbxts-library/issues"
+  },
+  "scripts": {
+    "build": "pnpm tsc",
+    "postbuild": "cp assets/dev.cmd dist/dev.cmd",
+    "dev": "pnpm --package=typescript dlx tsc --project tsconfig.json --watch",
+    "start": "pnpm exec ./dist/dev.cmd",
+    "prestart": "pnpm build",
+    "watch": "pnpm dev",
+    "preinstall": "npx only-allow pnpm"
+  },
+  "publishConfig": {
+    "access": "public"
+  },
+  "license": "Apache-2.0",
+  "devDependencies": {
+    "@changesets/cli": "^2.27.10",
+    "@eslint/js": "^9.16.0",
+    "@types/eslint": "^9.6.1",
+    "@types/eslint__js": "^8.42.3",
+    "@types/node": "^22.10.1",
+    "@types/lodash-es": "^4.17.12",
+    "@types/ejs": "^3.1.5",
+    "@types/fs-extra": "^11.0.4",
+    "@types/validate-npm-package-name": "^4.0.2",
+    "@typescript-eslint/eslint-plugin": "^8.17.0",
+    "@typescript-eslint/parser": "^8.17.0",
+    "eslint": "^9.16.0",
+    "eslint-plugin-notice": "^1.0.0",
+    "eslint-plugin-unicorn": "^56.0.1",
+    "jiti": "^2.4.1",
+    "prettier": "^3.4.2",
+    "prettier-plugin-organize-imports": "^4.1.0",
+    "typescript-eslint": "^8.17.0"
+  },
+  "dependencies": {
+    "@inquirer/prompts": "7.1.0",
+    "chalk": "^5.3.0",
+    "ejs": "^3.1.10",
+    "fs-extra": "^11.2.0",
+    "lodash-es": "^4.17.21",
+    "simple-git": "^3.27.0",
+    "typescript": "^5.7.2",
+    "validate-npm-package-name": "^6.0.0"
+  }
+}
