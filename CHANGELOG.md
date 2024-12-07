@@ -1,5 +1,12 @@
 # @daymxn/create-rbxts-library
 
+## 0.10.14
+
+### Patch Changes
+
+- 3409678: Fix bug in git repo init.
+- d372767: Fix node discovery issues.
+
 ## 0.10.0
 
 ### Minor Changes
